@@ -121,29 +121,29 @@ const SilverCalculator: React.FC<SilverCalculatorProps> = ({ baseMetalConfig, si
                                     </div>
                                 )}
                             </div>
-                            <div className="text-sm text-gray-600 mt-4 pt-4 border-t space-y-2">
-                                <div className="flex justify-between">
-                                    <span>Rate Applied:</span>
-                                    <span className="font-medium">₹{result.rateApplied.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} / 10g</span>
-                                    <span className="font-medium">{rateAppliedInWords?.hindi}</span>
+                            <div className="text-sm text-gray-600 mt-4 pt-4 border-t space-y-4">
+                                <div>
+                                    <div className="font-bold">Rate Applied:</div>
+                                    <div className="font-medium mt-1">₹{result.rateApplied.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} / 10g</div>
+                                    <div className="font-medium mt-1">{rateAppliedInWords?.hindi}</div>
                                 </div>
-                                <div className="flex justify-between">
-                                    <span>Making Charge:</span>
-                                    <span className="font-medium">₹{result.makingCharge.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
-                                    <span className="font-medium">{makingChargeInWords?.hindi}</span>
+                                <div>
+                                    <div className="font-bold">Making Charge:</div>
+                                    <div className="font-medium mt-1">₹{result.makingCharge.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
+                                    <div className="font-medium mt-1">{makingChargeInWords?.hindi}</div>
                                 </div>
-                                <div className="flex justify-between">
-                                    <span>Weight:</span>
-                                    <span className="font-medium">{weight} g</span>
+                                <div>
+                                    <div className="font-bold">Weight:</div>
+                                    <div className="font-medium mt-1">{weight} g</div>
                                 </div>
-                                <div className="flex justify-between">
-                                    <span>Item Type:</span>
-                                    <span className="font-medium">{selectedConfigDetails?.name}</span>
+                                <div>
+                                    <div className="font-bold">Item Type:</div>
+                                    <div className="font-medium mt-1">{selectedConfigDetails?.name}</div>
                                 </div>
-                                <div className="flex justify-between">
-                                    <span>Purchase Rate:</span>
-                                    <span className="font-medium">₹{result.purchaseRate.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
-                                    <span className="font-medium">{purchaseRateInWords?.hindi}</span>
+                                <div>
+                                    <div className="font-bold">Purchase Rate:</div>
+                                    <div className="font-medium mt-1">₹{result.purchaseRate.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
+                                    <div className="font-medium mt-1">{purchaseRateInWords?.hindi}</div>
                                 </div>
                             </div>
                         </div>
